@@ -162,6 +162,13 @@
   }
   .trust-item span.label{font-size:12.5px;line-height:1.4;color:#D7DCE3;}
 
+  /* ---------- VIDEO PROMO ---------- */
+  .video-promo{background:var(--ink);padding:88px 0;}
+  .vp-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:44px;align-items:center;}
+  .vp-media{position:relative;max-width:320px;margin:0 auto;border:1px solid #253244;overflow:hidden;}
+  .vp-media video{width:100%;aspect-ratio:9/16;object-fit:cover;display:block;}
+  .vp-copy .section-head{margin-bottom:26px;}
+
   /* ---------- SECTION HEADS ---------- */
   .section-head{max-width:640px;margin-bottom:48px;}
   .section-head h2{font-size:clamp(28px,3.6vw,40px);margin:14px 0;color:var(--ink-text);}
@@ -255,7 +262,7 @@
   .rate-card{
     background:var(--ink-2);border:1px solid #253244;
   }
-  .rate-media{position:relative;aspect-ratio:4/3;overflow:hidden;}
+  .rate-media{position:relative;aspect-ratio:3/4;overflow:hidden;}
   .rate-media img{width:100%;height:100%;object-fit:cover;}
   .rate-body{padding:26px 26px 28px;}
   .rate-body h4{color:var(--paper);font-size:21px;margin-bottom:6px;}
@@ -341,6 +348,8 @@
   @media (max-width:900px){
     nav.links{display:none;}
     .burger{display:block;}
+    .vp-grid{grid-template-columns:1fr;}
+    .vp-media{max-width:260px;}
     .hero-bg img{object-position:62% 18%;}
     .hero-bg .fade-left{background:linear-gradient(180deg, rgba(10,18,29,.35) 0%, rgba(10,18,29,.75) 55%, var(--ink) 92%);}
     .hero-content{padding:120px 0 70px;}
@@ -417,6 +426,24 @@
     <div class="trust-item"><span class="num">WA</span><span class="label">Respons Whatsapp<br>pantas &amp; mesra</span></div>
   </div>
 </div>
+
+<section class="video-promo">
+  <div class="wrap vp-grid">
+    <div class="vp-media">
+      <video autoplay muted loop playsinline controls>
+        <source src="assets/promo-walkaround.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="vp-copy">
+      <div class="section-head light-on-dark">
+        <div class="eyebrow on-dark">Lihat Sendiri</div>
+        <h2>Kereta yang anda tengok, itu yang anda dapat.</h2>
+        <p>Setiap unit kami periksa dan rakam keadaan sebenar &mdash; luaran, dalaman, sampai ruang enjin &mdash; supaya anda yakin sebelum datang tengok sendiri.</p>
+      </div>
+      <a class="btn btn-gold" href="https://wa.me/60146081909" target="_blank" rel="noopener">Whatsapp Kami</a>
+    </div>
+  </div>
+</section>
 
 <section class="pillars" id="tentang">
   <div class="wrap">
